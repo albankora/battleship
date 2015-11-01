@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Battleship Game</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js" type="application/javascript"></script>
+    <script src="/js/app.js" type="application/javascript"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <p class="message">Message: <span class="msg"></span></p>
+    </div>
+    <div class="row">
+        <table class="game">
+            <tbody>
+            <tr>
+                <td>#</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr class="A">
+                <td>A</td>
+                <td class="A1"><i class="fa fa-circle"></i></td>
+                <td class="A2"><i class="fa fa-circle"></i></td>
+                <td class="A3"><i class="fa fa-circle"></i></td>
+                <td class="A4"><i class="fa fa-circle"></i></td>
+                <td class="A5"><i class="fa fa-circle"></i></td>
+                <td class="A6"><i class="fa fa-circle"></i></td>
+                <td class="A7"><i class="fa fa-circle"></i></td>
+                <td class="A8"><i class="fa fa-circle"></i></td>
+                <td class="A9"><i class="fa fa-circle"></i></td>
+                <td class="A10"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr class="B">
+                <td>B</td>
+                <td class="B1"><i class="fa fa-circle"></i></td>
+                <td class="B2"><i class="fa fa-circle"></i></td>
+                <td class="B3"><i class="fa fa-circle"></i></td>
+                <td class="B4"><i class="fa fa-circle"></i></td>
+                <td class="B5"><i class="fa fa-circle"></i></td>
+                <td class="B6"><i class="fa fa-circle"></i></td>
+                <td class="B7"><i class="fa fa-circle"></i></td>
+                <td class="B8"><i class="fa fa-circle"></i></td>
+                <td class="B9"><i class="fa fa-circle"></i></td>
+                <td class="B10"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr class="C">
+                <td>C</td>
+                <td class="C1"><i class="fa fa-circle"></i></td>
+                <td class="C2"><i class="fa fa-circle"></i></td>
+                <td class="C3"><i class="fa fa-circle"></i></td>
+                <td class="C4"><i class="fa fa-circle"></i></td>
+                <td class="C5"><i class="fa fa-circle"></i></td>
+                <td class="C6"><i class="fa fa-circle"></i></td>
+                <td class="C7"><i class="fa fa-circle"></i></td>
+                <td class="C8"><i class="fa fa-circle"></i></td>
+                <td class="C9"><i class="fa fa-circle"></i></td>
+                <td class="C10"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr class="D">
+                <td>D</td>
+                <td class="D1"><i class="fa fa-circle"></i></td>
+                <td class="D2"><i class="fa fa-circle"></i></td>
+                <td class="D3"><i class="fa fa-circle"></i></td>
+                <td class="D4"><i class="fa fa-circle"></i></td>
+                <td class="D5"><i class="fa fa-circle"></i></td>
+                <td class="D6"><i class="fa fa-circle"></i></td>
+                <td class="D7"><i class="fa fa-circle"></i></td>
+                <td class="D8"><i class="fa fa-circle"></i></td>
+                <td class="D9"><i class="fa fa-circle"></i></td>
+                <td class="D10"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr class="E">
+                <td>E</td>
+                <td class="E1"><i class="fa fa-circle"></i></td>
+                <td class="E2"><i class="fa fa-circle"></i></td>
+                <td class="E3"><i class="fa fa-circle"></i></td>
+                <td class="E4"><i class="fa fa-circle"></i></td>
+                <td class="E5"><i class="fa fa-circle"></i></td>
+                <td class="E6"><i class="fa fa-circle"></i></td>
+                <td class="E7"><i class="fa fa-circle"></i></td>
+                <td class="E8"><i class="fa fa-circle"></i></td>
+                <td class="E9"><i class="fa fa-circle"></i></td>
+                <td class="E10"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr class="F">
+                <td>F</td>
+                <td class="F1"><i class="fa fa-circle"></i></td>
+                <td class="F2"><i class="fa fa-circle"></i></td>
+                <td class="F3"><i class="fa fa-circle"></i></td>
+                <td class="F4"><i class="fa fa-circle"></i></td>
+                <td class="F5"><i class="fa fa-circle"></i></td>
+                <td class="F6"><i class="fa fa-circle"></i></td>
+                <td class="F7"><i class="fa fa-circle"></i></td>
+                <td class="F8"><i class="fa fa-circle"></i></td>
+                <td class="F9"><i class="fa fa-circle"></i></td>
+                <td class="F10"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr class="G">
+                <td>G</td>
+                <td class="G1"><i class="fa fa-circle"></i></td>
+                <td class="G2"><i class="fa fa-circle"></i></td>
+                <td class="G3"><i class="fa fa-circle"></i></td>
+                <td class="G4"><i class="fa fa-circle"></i></td>
+                <td class="G5"><i class="fa fa-circle"></i></td>
+                <td class="G6"><i class="fa fa-circle"></i></td>
+                <td class="G7"><i class="fa fa-circle"></i></td>
+                <td class="G8"><i class="fa fa-circle"></i></td>
+                <td class="G9"><i class="fa fa-circle"></i></td>
+                <td class="G10"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr class="H">
+                <td>H</td>
+                <td class="H1"><i class="fa fa-circle"></i></td>
+                <td class="H2"><i class="fa fa-circle"></i></td>
+                <td class="H3"><i class="fa fa-circle"></i></td>
+                <td class="H4"><i class="fa fa-circle"></i></td>
+                <td class="H5"><i class="fa fa-circle"></i></td>
+                <td class="H6"><i class="fa fa-circle"></i></td>
+                <td class="H7"><i class="fa fa-circle"></i></td>
+                <td class="H8"><i class="fa fa-circle"></i></td>
+                <td class="H9"><i class="fa fa-circle"></i></td>
+                <td class="H10"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr class="I">
+                <td>I</td>
+                <td class="I1"><i class="fa fa-circle"></i></td>
+                <td class="I2"><i class="fa fa-circle"></i></td>
+                <td class="I3"><i class="fa fa-circle"></i></td>
+                <td class="I4"><i class="fa fa-circle"></i></td>
+                <td class="I5"><i class="fa fa-circle"></i></td>
+                <td class="I6"><i class="fa fa-circle"></i></td>
+                <td class="I7"><i class="fa fa-circle"></i></td>
+                <td class="I8"><i class="fa fa-circle"></i></td>
+                <td class="I9"><i class="fa fa-circle"></i></td>
+                <td class="I10"><i class="fa fa-circle"></i></td>
+            </tr>
+            <tr class="J">
+                <td>J</td>
+                <td class="J1"><i class="fa fa-circle"></i></td>
+                <td class="J2"><i class="fa fa-circle"></i></td>
+                <td class="J3"><i class="fa fa-circle"></i></td>
+                <td class="J4"><i class="fa fa-circle"></i></td>
+                <td class="J5"><i class="fa fa-circle"></i></td>
+                <td class="J6"><i class="fa fa-circle"></i></td>
+                <td class="J7"><i class="fa fa-circle"></i></td>
+                <td class="J8"><i class="fa fa-circle"></i></td>
+                <td class="J9"><i class="fa fa-circle"></i></td>
+                <td class="J10"><i class="fa fa-circle"></i></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <form name="input" method="post" class="form">
+            Enter coordinates (row, col), e.g. A5
+            <input type="text" size="5" class="coord" name="coord" autofocus pattern=".{2,3}" required="true" title="2 characters only a letter [A to J] and a number [1 to 10] for ex. A1">
+            <input type="submit" class="submit">
+        </form>
+    </div>
+</div>
+</body>
+</html>

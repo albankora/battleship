@@ -1,0 +1,23 @@
+table.game {
+    width: 220px;
+    margin: 0px auto;
+}
+
+.game tr{
+    width: 220px;
+    height: 20px;
+}
+
+.game td{
+    width: 20px;
+    height: 20px;
+    border: solid 1px #262626;
+    text-align: center;
+}
+
+.form, .message{
+    width: 370px;
+    height: 100px;
+    margin: 0px auto;
+    padding-top: 30px;
+}
