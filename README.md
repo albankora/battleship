@@ -2,6 +2,7 @@
 Simple Battleship Game
 
 ## Config
-###### Composer install
+###### Set up host and virtual host
+###### Run Composer install
 ###### Import database schema battleship.sql
 ###### Set database credentials -> config/database.php
