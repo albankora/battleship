@@ -1,7 +1,6 @@
 <?php
-
-\Libs\DI::bind("App\Models\Game\GameModelInterface", function () {
-    $db = \Libs\DB::getInstance();
+\Core\DI::bind("App\Models\Game\GameModelInterface", function () {
+    $db = \Core\DB::getInstance();
     return new \App\Models\Game\GameModel(
         new \App\Domain\Logic\GameLogic(
             new \App\Domain\Factories\ShipFactory()
@@ -10,6 +9,6 @@
             new App\Persistence\Database\GamePersistence($db),
             new App\Persistence\Database\ShotPersistence($db)
         ),
-        \Libs\Session::getInstance()
+        \Core\Session::getInstance()
     );
 });

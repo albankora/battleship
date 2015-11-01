@@ -1,5 +1,5 @@
 <?php
-$router = Libs\Router::getInstance();
+$router = Core\Router::getInstance();
 $router->get('/', 'App\Controllers\GameController@index');
 $router->get('newGame', 'App\Controllers\GameController@newGame');
 $router->get('gameData', 'App\Controllers\GameController@gameData');

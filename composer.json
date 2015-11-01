@@ -9,7 +9,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/App/",
-            "Libs\\": "app/Libs/",
+            "Core\\": "app/Core/",
             "Exceptions\\": "app/Exceptions/"
         }
     },

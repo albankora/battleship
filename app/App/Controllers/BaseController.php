@@ -3,8 +3,8 @@
 namespace App\Controllers;
 
 use Exceptions\FileNotFoundException;
-use Libs\App;
-use Libs\Request;
+use Core\App;
+use Core\Request;
 
 class BaseController
 {

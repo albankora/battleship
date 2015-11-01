@@ -1,6 +1,6 @@
 <?php
 
-namespace Libs;
+namespace Core;
 
 use FastRoute\Dispatcher;
 use Exceptions\MethodNotAllowedHttpException;

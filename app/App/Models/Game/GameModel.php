@@ -5,7 +5,7 @@ namespace App\Models\Game;
 use App\Domain\Logic\GameLogic;
 use App\Domain\Repository\Game\GameRepositoryInterface;
 use App\Models\AbstractModel;
-use Libs\Session;
+use Core\Session;
 
 class GameModel extends AbstractModel implements GameModelInterface
 {

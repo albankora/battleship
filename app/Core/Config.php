@@ -1,8 +1,8 @@
 <?php
 
-namespace Libs;
+namespace Core;
 
-use Libs\Exception\FileNotFoundException;
+use Exceptions\FileNotFoundException;
 
 class Config
 {

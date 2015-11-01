@@ -5,7 +5,7 @@ namespace App\Persistence\Database;
 class AbstractPersistence
 {
     /**
-     * @var \Libs\DB
+     * @var \Core\DB
      */
     protected $db;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Libs;
+namespace Core;
 
 class App
 {
@@ -10,7 +10,6 @@ class App
     {
         $router = Router::getInstance();
         $response = Response::getInstance();
-
         $response->send($router->dispatch());
     }
 
